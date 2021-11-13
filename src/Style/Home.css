@@ -1,0 +1,250 @@
+
+
+
+
+.wallpaper{
+    height:400px;
+    padding:0px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.box{
+    
+    position:absolute;
+    top:70px;
+    
+    
+    
+    
+}
+
+.Quick-Searches {
+    width: 239px;
+    height: 43px;
+    margin-left: 80px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    display:inline-block;
+}
+
+.Discover {
+    width: 331px;
+    height: 25px;
+    margin-left: 80px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+   
+}
+
+.item{
+    background-color:white;
+    padding-left: 0px;
+    margin:20px;
+    height: 160px;
+    width:350px;
+    box-shadow: 0 3px 6px 0 rgba(43, 22, 22, 0.16);
+    
+}
+
+.second_half{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+
+.blocks{
+    margin-left:70px
+}
+
+.Breakfast {
+    width: 88px;
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.Start{
+    width: 114px;
+    height: 62px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+}
+
+.Best_resturants{
+    width: 800px;
+  height: 51px;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.90;
+  letter-spacing: normal;
+  margin:auto;
+  color:white;
+  position: relative;
+  left: 120px;
+}
+
+.logo{
+    font-size: 58px;
+    height: 90px;
+    width: 90px;
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.input_type{
+    font-size: 12px;
+    
+    height: 25px;
+    padding-left: 20px;
+   
+    
+}
+
+
+
+
+.input_class{
+    display: inline-block;
+}
+
+
+.pos{
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 6px;
+    color: dimgrey;
+}
+
+.one{
+    padding-left:30px;
+}
+
+
+
+.check{
+    text-align: center;
+}
+
+.selection{
+    width: 200px;
+    font-size: 12px;
+   
+    height: 25px;
+   
+}
+
+
+    
+ @media only screen  and (max-width: 750px) {
+  
+
+    .Best_resturants{
+        font-size: 40px; 
+        margin-left: 10px;
+    }
+     
+   
+
+} 
+li {
+    list-style: none;
+    background-color: lightgray;
+    background-image: linear-gradient(90deg, red 20px, lightgray 10px);
+    padding: 10px 15px 10px 25px;
+    border: 1px solid #CCC;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#query {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 19px;
+    padding: 5px;
+    font-family: calibri light;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: lightgray;
+    color: gray;
+    padding-left: 29px;
+}
+
+#notebooks {
+    position: absolute;
+    left: 38%;
+    width: 350px;
+    border-radius: 5px;
+    max-height: 450px;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+    max-height: 390px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 5px 0 5px;
+    border-left: none;
+    border-right: none;
+}
+
+#notebooks span {
+    display: block;
+    position: absolute;
+    background: #FFD32E;
+    bottom: -35px;
+    left: -1px;
+    width: 360px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+

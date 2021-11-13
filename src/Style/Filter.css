@@ -1,0 +1,360 @@
+.header
+{
+    background-color: red;
+    height: 50px;
+}
+
+.flogin{
+    float: right;
+    
+}
+.fcreate_account{
+    float: right;
+    border: black 1px;
+    border-radius: 10px;
+    border-style: solid;
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+
+
+.bf_places{
+    width: 512px;
+    height: 51px;
+    margin: 37px 25px 27px 113px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.ffilter_box{
+
+display: inline-block;
+
+height: 645px;
+
+margin-left: 110px;
+box-shadow: 0 3px 6px 0 rgba(28, 30, 184, 0.16);
+background-color: #ffffff;
+}
+
+.details{
+vertical-align: top;
+box-shadow: yellowgreen;
+display: inline-block;
+width: 50%;
+height:550px;
+background-color: white;
+margin-left: 30px;
+
+}
+
+.upper{
+margin-bottom:25px;
+height: 245px;
+width: 100%;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+background-color:white
+}
+
+.lower{
+margin-bottom: 30px;
+height: 245px;
+width: 100%;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+background-color:white;
+}
+
+.ffilter {
+    width: 55px;
+    height: 25px;
+    margin: 24px 0px 0px 28px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+.fSelect_location{
+ width: 106px;
+  height: 20px;
+  margin: -10px 0px 0px 28px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+}
+
+.fselect{
+    width: 159px;
+    height: 23px;
+    margin: 5px 28px 0px 28px;
+    padding: 0px 0px 1px 15px;
+    border-radius: 3px;
+    border: solid 1px #8c96ab;
+    font-size: 12px;
+    color: #8c96ab; 
+    
+}
+
+.fcuisine {
+  width: 51px;
+  height: 20px;
+  margin: 17px 0px 0px 28px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+}
+
+.fcheck_box{
+    padding-left: 28px;
+    font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8c96ab;
+  margin-top: 8px;
+  width: 300px;
+  
+}
+
+.fcost_for_two {
+    width: 89px;
+    height: 20px;
+    margin: 13px 0px 5px 28px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+
+
+.fsort {
+    width: 37px;
+    height: 25px;
+    margin: 38px 0px 15px 28px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+.fradio_button{
+    width: 138px;
+    height: 137px;
+    margin-left: 23px;
+    font-family: Poppins;
+    font-size: 83%;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+    
+}
+.fradio_button_sort{
+    width: 128px;
+    height: 45px;
+    margin: 15px 0px 12px 22px;
+    font-family: Poppins;
+    font-size: 83%;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+}
+
+.fdetails{
+    vertical-align: top;
+    box-shadow: yellowgreen;
+    
+    width: 580px;
+    height:275px;
+    background-color: white;
+    margin-left: 30px;
+    
+}
+
+.fupper{
+    margin-bottom:25px;
+    height: 245px;
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color:white
+ }
+
+ .fimage_div{
+    
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    display: inline-block;
+    margin: 27px 24px 13px 27px;
+    vertical-align: top;
+}
+
+.fimage{
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+}
+
+
+.fcontainer{
+    display: inline-block;
+    height: 125px;
+    width: 282px;
+}
+
+.fbig_chill{
+    width: 65%;
+    height: 22px;
+    margin: 30px 0px 1px 0px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    
+    vertical-align: top;
+}
+
+.ffORT {
+    width: 39px;
+    height: 23px;
+    margin: 0px 0px 0px 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    
+}
+
+
+.faddress{
+    width: 400px;
+    height: 59px;
+    margin: 5px 0px 0px 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #636f88;
+    
+}
+
+.fline {
+    width: 100%;
+    height: 0;
+    margin: 31px 0 0;
+    border: solid 1px #dedfe5;
+
+}
+
+.fcuisine_box{
+    width: 140px;
+    height: 50px;
+    margin: 17px 0px 5px 28px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #636f88;
+    display: inline-block;
+    vertical-align: top; 
+}
+
+.fbakery {
+    width: 200px;
+    height: 55px;
+    margin: 11px 0px 0px 21px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.pagination{
+    position: relative;
+    top:30px;
+    left:40%;
+    
+}
+
+.page{
+    width: 60px;
+    margin: 5px;
+    border-style: solid;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 10px;
+}
+.filter_box{
+    position:absolute;
+    top:70px;
+}

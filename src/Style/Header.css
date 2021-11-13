@@ -1,0 +1,47 @@
+
+.upper_box{
+    position:absolute;
+    height: 40px;
+    background-color:red;
+    
+}
+.Log_box{
+    color: white;
+    
+    
+
+}
+
+.Login{
+    width: 50px;
+    height: 25px;
+    font-size: 15px;
+    display: inline-block;
+    float: right;
+    
+    
+
+}
+.Create_account{
+    width: 170px;
+    height: 25px;
+    font-size: 15px;  
+    border: 1px white solid;
+    border-radius: 3px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    
+    
+    
+}
+
+.logo_header{
+    font-size: 26px;
+    height: 41px;
+    width: 47px;
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
