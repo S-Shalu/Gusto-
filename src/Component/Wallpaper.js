@@ -35,7 +35,7 @@ class Wallpaper extends Component {
         sessionStorage.setItem('loc', locationId)
 
         axios({
-            url:` https://peaceful-headland-73196.herokuapp.com/${locationId}`,
+            url:`https://z-clone-be.herokuapp.com/${locationId}`,
             headers:{'Content-type':'application/json'},
             method:'GET'
         }).then(res=>{

@@ -17,7 +17,7 @@ class home extends React.Component {
   componentDidMount() {
     sessionStorage.clear()
     axios({
-      url: " https://peaceful-headland-73196.herokuapp.com/locations",
+      url: "https://z-clone-be.herokuapp.com/locations",
       method: 'GET',
       headers: { 'Content-Type': 'application/json' }
     }).then(
@@ -28,7 +28,7 @@ class home extends React.Component {
 
 
     axios({
-      url:" https://peaceful-headland-73196.herokuapp.com/mealtypes",
+      url:"https://z-clone-be.herokuapp.com/mealtypes",
       method:'GET',
       headers:{"Content-Type":'application/json'}
     }).then(

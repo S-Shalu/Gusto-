@@ -51,7 +51,7 @@ class Details extends React.Component {
 
 
         axios({
-            url: ` https://peaceful-headland-73196.herokuapp.com/resturantByResId/${res_Id}`,
+            url: `https://z-clone-be.herokuapp.com/resturantByResId/${res_Id}`,
             headers: { 'content-type': 'application/json' },
             method: 'GET',
 
@@ -66,7 +66,7 @@ class Details extends React.Component {
         const { restaurant_Id, menuModalIsOpen } = this.state
 
         axios({
-            url: ` https://peaceful-headland-73196.herokuapp.com/menuItemsByResId/${restaurant_Id}`,
+            url: `https://z-clone-be.herokuapp.com/menuItemsByResId/${restaurant_Id}`,
             headers: { 'content-type': 'application/json' },
             method: 'GET',
 
@@ -146,7 +146,7 @@ class Details extends React.Component {
     }
 
     getData = (data) => {
-        return fetch(" https://peaceful-headland-73196.herokuapp.com/payment", {
+        return fetch("https://z-clone-be.herokuapp.com/payment", {
             method: "POST",
             headers: {
                 Accept: "application/json",
