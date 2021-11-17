@@ -34,7 +34,7 @@ class Filter extends Component {
             location:location
         }
         axios({
-            url: 'http://localhost:7001/filter',
+            url: 'https://z-clone-be.herokuapp.com/filter',
             headers: { 'content-type': 'application/json' },
             method: 'POST',
             data: filterobj
@@ -46,7 +46,7 @@ class Filter extends Component {
 
 
         axios({
-            url: "http://localhost:7001/locations",
+            url: "https://z-clone-be.herokuapp.com/locations",
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
           }).then(
@@ -71,7 +71,7 @@ class Filter extends Component {
             cuisine
         }
         axios({
-            url: 'http://localhost:7001/filter',
+            url: 'https://z-clone-be.herokuapp.com/filter',
             headers: { 'content-type': 'application/json'},
             method: 'POST',
             data: filterobj
@@ -99,7 +99,7 @@ class Filter extends Component {
 
         axios(
             {
-                url: 'http://localhost:7001/filter',
+                url: 'https://z-clone-be.herokuapp.com/filter',
                 headers: { 'content-type': 'application/json' },
                 method: 'POST',
                 data: filterobj  
@@ -128,7 +128,7 @@ class Filter extends Component {
 
         axios(
             {
-                url: 'http://localhost:7001/filter',
+                url: 'https://z-clone-be.herokuapp.com/filter',
                 headers: { 'content-type': 'application/json' },
                 method: 'POST',
                 data: filterobj  
@@ -165,7 +165,7 @@ class Filter extends Component {
         };
 
         axios({
-            url: 'http://localhost:7001/filter',
+            url: 'https://z-clone-be.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json'},
             method: 'POST',
             data: filterObj
@@ -204,7 +204,7 @@ class Filter extends Component {
 
         axios(
             {
-                url: 'http://localhost:7001/filter',
+                url: 'https://z-clone-be.herokuapp.com/filter',
                 headers: { 'content-type': 'application/json' },
                 method: 'POST',
                 data: filterobj  
