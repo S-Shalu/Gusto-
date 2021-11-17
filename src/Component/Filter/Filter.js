@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import '../../Style/Filter.css'
 import QueryString from "query-string";
 import axios from "axios";
-import Header from '../Header'
+
 
 class Filter extends Component {
     constructor() {
@@ -34,17 +34,19 @@ class Filter extends Component {
             location:location
         }
         axios({
-            url: ' https://z-clone-be.herokuapp.com/filter',
+            url: 'http://localhost:7001/filter',
             headers: { 'content-type': 'application/json' },
             method: 'POST',
             data: filterobj
         }).then(res => {
-            this.setState({ restaurant: res.data.restaurants, pagecount: res.data.pageCount,mealtype:mealtype,location:location})
+            this.setState({ restaurant: res.data.restaurants,
+                 pagecount: res.data.pageCount,
+                 mealtype,location})
         }).catch()
 
 
         axios({
-            url: "  https://z-clone-be.herokuapp.com/locations",
+            url: "http://localhost:7001/locations",
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
           }).then(
@@ -60,15 +62,16 @@ class Filter extends Component {
         const{mealtype, cuisine, page, sort, lcost, hcost }=this.state
 
         const filterobj = {
-            mealtype: mealtype,
-            location:location,
+            mealtype,
+            location,
             sort,
             lcost,
             hcost,
-            page
+            page,
+            cuisine
         }
         axios({
-            url: 'https://z-clone-be.herokuapp.com/filter',
+            url: 'http://localhost:7001/filter',
             headers: { 'content-type': 'application/json'},
             method: 'POST',
             data: filterobj
@@ -96,7 +99,7 @@ class Filter extends Component {
 
         axios(
             {
-                url: 'https://z-clone-be.herokuapp.com/filter',
+                url: 'http://localhost:7001/filter',
                 headers: { 'content-type': 'application/json' },
                 method: 'POST',
                 data: filterobj  
@@ -110,26 +113,30 @@ class Filter extends Component {
 
 
     handleCostChange=(lcost,hcost)=>{
-        const{mealtype,location,sort}=this.state
+        const{mealtype,location,sort,page,cuisine,}=this.state
 
         const filterobj={
             mealtype: mealtype,
             location:location,
             sort,
             lcost,
-            hcost
+            hcost,
+            page,
+            cuisine:cuisine.length > 0 ? cuisine : undefined
 
         }
 
         axios(
             {
-                url: 'https://z-clone-be.herokuapp.com/filter',
+                url: 'http://localhost:7001/filter',
                 headers: { 'content-type': 'application/json' },
                 method: 'POST',
                 data: filterobj  
             }
         ).then(res=>{
-            this.setState({ restaurant: res.data.restaurants, pagecount: res.data.pageCount,lcost,hcost})
+            this.setState({ restaurant: res.data.restaurants,
+                 pagecount: res.data.pageCount,
+                 lcost,hcost})
         }).catch()
 
         this.props.history.push(`/filter?mealtype=${mealtype}&location=${location}&sort=${sort}&lcost=${lcost}&hcost=${hcost}`)
@@ -148,9 +155,9 @@ class Filter extends Component {
         }
 
         const filterObj = {
-            mealtype_id: mealtype,
-            location_id: location,
-            cuisine_id: cuisine.length > 0 ? cuisine : undefined,
+            mealtype: mealtype,
+            location: location,
+            cuisine: cuisine.length > 0 ? cuisine : undefined,
             lcost,
             hcost,
             page,
@@ -158,14 +165,14 @@ class Filter extends Component {
         };
 
         axios({
-            url: 'https://z-clone-be.herokuapp.com/filter',
-            headers: { 'Content-Type': 'application/json' },
+            url: 'http://localhost:7001/filter',
+            headers: { 'Content-Type': 'application/json'},
             method: 'POST',
             data: filterObj
         })
             .then(res => {
                 this.setState({
-                    restaurants: res.data.restaurants,
+                    restaurant: res.data.restaurants,
                     pageCount: res.data.pageCount,
                     cuisine
                 })
@@ -197,7 +204,7 @@ class Filter extends Component {
 
         axios(
             {
-                url: 'https://z-clone-be.herokuapp.com/filter',
+                url: 'http://localhost:7001/filter',
                 headers: { 'content-type': 'application/json' },
                 method: 'POST',
                 data: filterobj  
@@ -219,7 +226,7 @@ class Filter extends Component {
                 
                 
                 <div className="bf_places">
-                    Breakfast places in mumbai
+                    Breakfast places in {restaurant.name}
                 </div>
                 <div className="ffilter_box row">
                     <div className="col-lg-3 col-md-3 col-sm-3">
@@ -239,18 +246,11 @@ class Filter extends Component {
                         <div className="fcuisine">Cuisine</div>
 
                         <div className="fcheck_box">
-
-
-
-
-
-                        <input type="checkbox" onChange={this.handleCuisineChange(1)} />      <label >North Indian</label><br />
-
-                        <input type="checkbox" onChange={this.handleCuisineChange(2)}/>  <label > SouthIndian </label><br />
-                        <input type="checkbox" onChange={this.handleCuisineChange(3)}/>  <label > Chinese  </label><br />
-                        <input type="checkbox" onChange={this.handleCuisineChange(4)}/>  <label > Fast Food </label><br />
-                        <input type="checkbox" onChange={this.handleCuisineChange(5)}/>   <label > Street Food </label>
-
+                        <input type="checkbox" name="cuisine" onChange={()=>this.handleCuisineChange(1)} />  <label >North Indian</label><br />
+                        <input type="checkbox" name="cuisine" onChange={()=>this.handleCuisineChange(2)}/>  <label > SouthIndian </label><br />
+                        <input type="checkbox" name="cuisine" onChange={()=>this.handleCuisineChange(3)}/>  <label > Chinese  </label><br />
+                        <input type="checkbox"  name="cuisine"onChange={()=>this.handleCuisineChange(4)}/>  <label > Fast Food </label><br />
+                        <input type="checkbox" name="cuisine" onChange={()=>this.handleCuisineChange(5)}/>   <label > Street Food </label>
                         </div>
 
                         <div className="fcost_for_two" > Cost for two</div>
@@ -281,7 +281,7 @@ class Filter extends Component {
 
 
                 <div className="row" style={{ display: "inline-block" }}>
-                    {restaurant.map((item) => {
+                    {restaurant&& restaurant.length>0 ? restaurant.map((item) => {
                         return (
                             <div className="fdetails"  >
 
@@ -311,7 +311,7 @@ class Filter extends Component {
                         )
 
 
-                    })}
+                    }):<div><h1>No Records found</h1></div>   }
                 </div>
 
                 
