@@ -311,7 +311,7 @@ class Filter extends Component {
                         )
 
 
-                    }):<div><h1>No Records found</h1></div>   }
+                    }):<divClassName="No_records"><h1>No Records found</h1></div>   }
                 </div>
 
                 
