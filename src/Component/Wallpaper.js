@@ -39,7 +39,7 @@ class Wallpaper extends Component {
             headers:{'Content-type':'application/json'},
             method:'GET'
         }).then(res=>{
-                this.setState({restaurants:res.data.res_list})
+                this.setState({restaurantList:res.data.body})
         }).catch()
 
     }
