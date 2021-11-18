@@ -358,3 +358,14 @@ background-color:white;
     position:absolute;
     top:70px;
 }
+
+.No_records{
+    position: absolute;
+    top: 200px;
+    margin-left: 200px;
+    color: rgb(218, 22, 22);
+    border-style: groove;
+    border-radius: 20px;
+    text-align: center;
+    
+}
